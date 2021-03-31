@@ -6,7 +6,6 @@ $pagina = obtenerPaginaActual();
 //   include 'functions/sessions.php';
 // }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,7 +56,7 @@ $pagina = obtenerPaginaActual();
         <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
           <ul class="navbar-nav float-right">
             <li class="nav-item">
-              <a class="nav-link TextS closeSession">Cerrar sesión</a> <!-- login.php?user=doctor -->
+              <a class="nav-link TextS closeSession" href="login.php?user=dactor" >Cerrar sesión</a> <!-- login.php?user=doctor '<?php echo $tipo ?>' -->
             </li>
           </ul>
         </div>
@@ -72,24 +71,25 @@ $pagina = obtenerPaginaActual();
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Registro de Doctores</a>
+    <a class="nav-link active" id="doc-tab" data-toggle="tab" href="#doc" role="tab" aria-controls="doc" aria-selected="true">Registro de Doctores</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Registro de pacientes </a>
+    <a class="nav-link" id="Paciente-tab" data-toggle="tab" href="#Paciente" role="tab" aria-controls="Paciente" aria-selected="false">Registro de pacientes </a>
   </li>
   <!--<li class="nav-item">
     <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
   </li>-->
 </ul>
+<!--section paciente/doctor-->
 <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+<!--sectionDoctor-->
+  <div class="tab-pane fade show active" id="doc" role="tabpanel" aria-labelledby="doc-tab">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <p class="Titulo1subin">Registro de Doctores</p>
         </div>
       </div>
-
       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Datos Doctor</a>
@@ -102,6 +102,7 @@ $pagina = obtenerPaginaActual();
         </li>
       </ul>
       <div class="tab-content" id="pills-tabContent">
+      <!--Datos doc-->
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
           <div class="col-md-12" style="height:50px;"></div>
           <div class="row">
@@ -215,6 +216,7 @@ $pagina = obtenerPaginaActual();
             </div>
           </div>
         </div>
+        <!--datos pago-->
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
           <div class="col-md-12" style="height:50px;"></div>
           <div class="row">
@@ -312,14 +314,15 @@ $pagina = obtenerPaginaActual();
               <span id="lblRE" class="textoObligatorio" style="display:none;">Campo obligatorio</span>
             </div>
           </div>
-        </div>
+        </div><!--pendiente-->
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
           <div class="col-md-12" style="height:50px;"></div>
         </div>
       </div>
     </div>
   </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+  <!--sectionpacientes-->
+  <div class="tab-pane fade" id="Paciente" role="tabpanel" aria-labelledby="Paciente-tab">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -329,17 +332,18 @@ $pagina = obtenerPaginaActual();
 
       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Datos Paciente</a>
+          <a class="nav-link active" id="pills-home-tabp" data-toggle="pill" href="#pills-homep" role="tab" aria-controls="pills-homep" aria-selected="true">Datos Paciente</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Datos de pago</a>
+          <a class="nav-link" id="pills-profile-tabp" data-toggle="pill" href="#pills-profilep" role="tab" aria-controls="pills-profilep" aria-selected="false">Datos de pago</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Confirmación</a>
+          <a class="nav-link" id="pills-contact-tabp" data-toggle="pill" href="#c" role="tab" aria-controls="pills-contact" aria-selected="false">Confirmación</a>
         </li>
       </ul>
       <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <!--datos paciente-->
+        <div class="tab-pane fade show active" id="pills-homep" role="tabpanel" aria-labelledby="pills-home-tabp">
           <div class="col-md-12" style="height:50px;"></div>
           <div class="row">
             <div class="col-md-6">
@@ -526,7 +530,8 @@ $pagina = obtenerPaginaActual();
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <!--datos pago-->
+        <div class="tab-pane fade" id="pills-profilep" role="tabpanel" aria-labelledby="pills-profile-tabp">
           <div class="col-md-12" style="height:50px;"></div>
           <div class="row">
             <div class="col-md-6" style="margin-top:10px;">
@@ -697,23 +702,162 @@ $pagina = obtenerPaginaActual();
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-          <div class="col-md-12" style="height:50px;"></div>
-        </div>
+      <!--datos pendiente-->
+      <div class="tab-pane fade" id="pills-contactp" role="tabpanel" aria-labelledby="pills-contact-tabp">
+
+      <div id="screenshot" style="text-align:center;">
+    <video class="videostream" autoplay=""></video>
+    <img id="screenshot-img">
+    <p>
+        <button class="capture-button" title="Cámara" aria-label="Cámara">Capture Pick</button>
+        <button id="screenshot-button" title="Captura" aria-label="Captura" disabled="">Take screenshot</button>
+    </p>
+</div>
+<video autoplay style="display:none;"></video>
+<img src="">
+<canvas id="canv" style="display:none;"></canvas>
+<input type="button" id="btnEnviarCamera" value="enviar" title="Enviar" aria-label="Enviar" />
+<input type="button" id="btnCancelarCamera" value="cancelar" title="Cancelar" aria-label="Cancelar" />
+<input type="hidden" name="idchat" value="@ViewBag.roomID" />
+<input type="hidden" name="type" value="audio" />
+<progress></progress>
+<div id="dataUrlcontainer" style="display:none;"></div>
+
+<script>
+
+    $(document).ready(function () {
+        $('progress').hide();
+        $('#screenshot-img').hide();
+    });
+
+    $('#btnCancelarCamera').on('click', function () {
+
+        document.querySelector('#screenshot video').srcObject.getTracks().forEach((track) => {
+            track.stop();
+            $('progress').show();
+        });
+
+        $("#controlsAdditional").hide();
+        $("#controlsChat").show();
+    });
+
+    $(function () {
+
+        // Reference the auto-generated proxy for the hub.
+        var chat = $.connection.chatHub;
+
+        // Start the connection.
+        $.connection.hub.start().done(function () {
+
+            $('#btnEnviarCamera').on('click', function () {
+
+                document.querySelector('#screenshot video').srcObject.getTracks().forEach((track) => {
+                    track.stop();
+                    $('progress').show();
+                });
+
+                var dataURL = document.getElementById("dataUrlcontainer").innerHTML;
+
+                $.ajax({
+                    url: '@Url.Content("~/Chat/UploadIamge")',
+                    type: 'POST',
+
+                    // Form data
+                    data: JSON.stringify({ idchat: $("#idchat").val(), type: $("#type").val(), image: dataURL }),
+                    dataType: "json",
+                    contentType: "application/json",
+                    cache: false,
+
+                    // Custom XMLHttpRequest
+                    xhr: function () {
+                        var myXhr = $.ajaxSettings.xhr();
+                        if (myXhr.upload) {
+                            // For handling the progress of the upload
+                            myXhr.upload.addEventListener('progress', function (e) {
+                                if (e.lengthComputable) {
+                                    $('progress').show();
+                                    $('progress').attr({
+                                        value: e.loaded,
+                                        max: e.total,
+                                    });
+                                }
+                            }, false);
+                        }
+                        return myXhr;
+                    },
+                    success: function (result) {
+
+                        chat.server.send($('#displayname').val(), "<a href='" + result + "' target='_blank'><img src='" + result + "' width='100px' height='100px'></a>", "@ViewBag.RoomID",'');
+
+
+                        $("#controlsAdditional").hide();
+                        $("#controlsChat").show();
+                    }
+                });
+            });
+        });
+
+
+
+        const constraints = {
+            video: true
+        };
+        const captureVideoButton = document.querySelector('#screenshot .capture-button');
+        const screenshotButton = document.querySelector('#screenshot-button');
+        const img = document.querySelector('#screenshot img');
+        const video = document.querySelector('#screenshot video');
+
+        const canvas = document.createElement('canvas');
+
+        captureVideoButton.onclick = function () {
+            $('#screenshot video').show();
+            $('#screenshot img').hide();
+
+            navigator.mediaDevices.getUserMedia(constraints).
+                then(handleSuccess).catch(handleError);
+        };
+
+        screenshotButton.onclick = video.onclick = function () {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            canvas.getContext('2d').drawImage(video, 0, 0);
+            // Other browsers will fall back to image/png
+            img.src = canvas.toDataURL('image/webp');
+            var duc = document.getElementById("dataUrlcontainer");
+            duc.innerHTML = canvas.toDataURL('image/webp');
+            video.pause();
+            $('#screenshot video').hide();
+            $('#screenshot img').show();
+        };
+
+        function handleSuccess(stream) {
+            screenshotButton.disabled = false;
+            video.srcObject = stream;
+        }
+
+        function handleError(error) {
+            console.error('Error: ', error);
+        }
+    });
+
+
+</script>
+      </div>
       </div>
     </div>
   </div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-</div>
-</div>
-      <div class="col-md-12" style="height:50px;"></div>
 
-    </main>
-  </div>
+</div>
+</div>
+ <div class="col-md-12" style="height:50px;"></div>
+</main>
+
+</div>
 
   <footer class="border-top footer text-muted">
     <div class="container text-center Ftext">
-      &copy; <a class="Ftext">Privacy</a>
+      &copy; <a class="Ftext">©Copyright 2021 Sactiva-DocDigital </a>
+    
     </div>
   </footer>
   <script src="lib/jquery/dist/jquery.min.js"></script>

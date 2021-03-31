@@ -34,7 +34,7 @@ include 'templates/header.php';
   
         <div class="d-flex justify-content-between align-items-center flex-wrap mt-2">
           <input type="hidden" name="tipo" value="<?php echo $_GET['user'] ?>">
-          <input type="submit" class="btn login-btn" id="login" value="Entrar" >
+          <input type="submit" class="btn login-btn" id="login" href="registro-doctor.php" value="Entrar" >
           <a href="#!" class="forgot-password-link">¿Olvidaste tu contraseña?</a>
         </div>
       </form>
