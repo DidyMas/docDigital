@@ -1,0 +1,168 @@
+﻿.label-before {
+    font-family: 'AvenirRegular';
+    color: #8c8c8c;
+    line-height: 20px;
+    font-size: 14px;
+    top: -10px;
+    background: #fff;
+    padding: 0 6px;
+    left: 9px;
+}
+
+.field {
+    position: relative;
+    margin-bottom: 15px;
+
+    label::before {
+        content: attr(title);
+        position: absolute;
+        top: 0;
+        left: 15px;
+        line-height: 40px;
+        font-family: 'AvenirBold';
+        font-size: 14px;
+        color: #8c8c8c;
+        transition: 300ms all;
+    }
+
+    input {
+        width: 100%;
+        line-height: 40px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        font-family: 'AvenirRegular';
+        font-size: 14px;
+        color: #8c8c8c;
+        /* border: 1px solid #ccc;
+        border-radius: 3px;*/
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #8C8C8C;
+
+        &:focus {
+            outline: 0;
+            border-color: #65CADB;
+        }
+
+        &:valid + label::before {
+            @extend .label-before;
+            content: attr(data-title);
+        }
+
+        &:focus + label::before {
+            @extend .label-before;
+            color: #65CADB;
+        }
+    }
+}
+
+.Ajusttex {
+    font-family: 'AvenirRegular';
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+
+
+.puesto select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    font-size: 14px;
+    font-family: 'AvenirRegular';
+    color: #8c8c8c;
+    /*line-height: 16px;*/
+    padding: .4em 1.4em .6em .8em;
+    width: 800px;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #8C8C8C;
+    background-color: none;
+    background-image: url('img/lista.png'), linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 15px 0;
+    background-size: 23px;
+    border-image: none;
+    /*box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px;*/
+}
+.puesto select:focus {
+    outline: none;
+}
+
+
+.fieldc label::before {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 15px;
+    line-height: 40px;
+    font-family: 'AvenirBold';
+    font-size: 18px !important;
+    color: #8c8c8c;
+    transition: 300ms all;
+}
+
+
+.fieldc {
+    position: relative;
+    margin-bottom: 15px;
+
+    label::before {
+        content: attr(title);
+        position: absolute;
+        top: 0;
+        left: 15px;
+        line-height: 40px;
+        font-family: 'AvenirBold';
+        font-size: 18px;
+        color: #8c8c8c;
+        transition: 300ms all;
+    }
+
+    input {
+        width: 100%;
+        line-height: 40px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        font-family: 'AvenirRegular';
+        font-size: 18px;
+        color: #8c8c8c;
+        /* border: 1px solid #ccc;
+        border-radius: 3px;*/
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid #8C8C8C;
+
+        &:focus {
+            outline: 0;
+            border-color: #65CADB;
+        }
+
+        &:valid + label::before {
+            @extend .label-before;
+            content: attr(data-title);
+        }
+
+        &:focus + label::before {
+            @extend .label-before;
+            color: #65CADB;
+        }
+    }
+}
+
+.fieldc input:valid + label::before {
+    font-family: 'AvenirRegular';
+    color: #8c8c8c;
+    line-height: 20px;
+    font-size: 18px !important;
+    top: -10px;
+    background: #fff;
+    padding: 0 6px;
+    left: 9px;
+}

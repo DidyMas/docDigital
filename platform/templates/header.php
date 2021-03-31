@@ -17,7 +17,7 @@ if($pagina !== 'login' && $pagina !== 'create-account') {
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="../site.webmanifest">
-  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="shortcut icon" href="../icon.png">
 
   <!-- Font Karla -->
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700&amp;display=swap" rel="stylesheet">
