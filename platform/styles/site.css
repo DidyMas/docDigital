@@ -223,12 +223,31 @@ body {
 .NavSact {
     font-family: "AvenirNext-Regular", Helvetica, Arial, serif;
     font-size: 22.0px;
-    color: rgba(140, 140, 140, 1.0);
-    text-align: left;
+    color: #0366d6 !important;
     line-height: 30.0px;
     outline: none !important;
     background: none;
+    border: 2px solid #0366d6;
+    border-radius: 20px;
     /*    background: linear-gradient(to bottom, #1b6ec2, #65a1de 80%, #cecef7);*/
+}
+
+.NavSact:hover {
+    font-family: "AvenirNext-Regular", Helvetica, Arial, serif;
+    font-size: 22.0px;
+    color: #FFF !important;
+    border: 2px solid rgb(155, 190, 255);
+    background-color: #0366d6;
+}
+
+.NSact {
+    font-family: "AvenirNext-Regular", Helvetica, Arial, serif;
+    font-size: 22.0px;
+    color: #0366d6 !important;
+    line-height: 30.0px;
+    outline: none !important;
+    background: none;
+    margin-right: 20px;
 }
 
 .navimg {
