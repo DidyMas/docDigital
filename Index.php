@@ -65,9 +65,78 @@ $pagina = obtenerPaginaActual();
       </div>
     </nav>
   </header>
-<div class="container">
+<div class="container-fluid sinbord">
 <main role="main" class="pb-3">
+<div class="position-relative overflow-hidden sinbord text-center bg-light">
+<video autoplay muted loop id="myVideo">
+  <source src="Content/Dna.mp4" type="video/mp4">
+</video>
+    <div class="col-md-12 p-lg-12 mx-auto my-5">
+      <h1 class="display-4 fw-normal Hdoc">DocDigital</h1>
+      <p class="lead fw-normal ptext">Doctor Digital, es la aplicación web de video consulta médica que te permitirá</br> obtener una orientación médica de
+         forma privada y segura. Así evitarás desplazamientos y esperas.</p>
+         <a class="BTns" href="platform/login.php?user=doctor">Iniciar Sesión</a> <!--href="login.php?user=<?php echo $tipo ?>"-->
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
+<div class="col-md-12" style="height:50px;"></div>
+<section class="pt-12 pt-md-13 bg-gray-200">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-lg-6 order-md-2">
 
+            <!-- Image -->
+            <img src="Content/stethoscope.jpg" alt="..." class="img-fluid mb-6 mb-md-0">
+
+          </div>
+          <div class="col-12 col-md-7 col-lg-6 order-md-1">
+
+            <!-- Heading -->
+            <h2>
+            Manténgase enfocado en su salud. <br>
+              <span class="text-primary">Manejemos la atención</span>.
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-gray-700 mb-6">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit porttitor aptent, justo cursus netus purus blandit convallis massa ut ac, himenaeos imperdiet lectus enim class consequat risus nam. 
+            </p>
+
+            <!-- Stats -->
+            <div class="d-flex">
+              <div class="pr-5">
+                <h3 class="mb-0">
+                  <span data-toggle="countup" data-from="0" data-to="100" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">100</span>%
+                </h3>
+                <p class="text-gray-700 mb-0">
+                Satisfacción
+                </p>
+              </div>
+              <div class="border-left border-gray-300"></div>
+              <div class="px-5">
+                <h3 class="mb-0">
+                  <span data-toggle="countup" data-from="0" data-to="24" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">24</span>/
+                  <span data-toggle="countup" data-from="0" data-to="7" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">7</span>
+                </h3>
+                <p class="text-gray-700 mb-0">
+                Soporte
+                </p>
+              </div>
+              <div class="border-left border-gray-300"></div>
+              <div class="pl-5">
+                <h3 class="mb-0">
+                  <span data-toggle="countup" data-from="0" data-to="100" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">100</span>k+
+                </h3>
+                <p class="text-gray-700 mb-0">
+                  Atención
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
  <div class="col-md-12" style="height:50px;"></div>
 </main>
 

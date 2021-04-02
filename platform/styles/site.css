@@ -520,3 +520,51 @@ div .select-selected::selection {
     border-color: #1861ac;
     font-family: 'AvenirRegular' !important;
 }
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.sinbord {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.Hdoc {
+    color: #fff;
+}
+
+.ptext {
+    color: #fff;
+    background: #00000045;
+    border-radius: 10px;
+    /* width: 75%; */
+    padding: 10px;
+}
+
+.BTns {
+    font-family: "AvenirNext-Regular", Helvetica, Arial, serif;
+    font-size: 22.0px;
+    line-height: 30.0px;
+    outline: none !important;
+    background: none;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px;
+    color: #FFF !important;
+    border: 2px solid rgb(155, 190, 255);
+}
+
+.BTns:hover {
+    font-family: "AvenirNext-Regular", Helvetica, Arial, serif;
+    font-size: 22.0px;
+    color: #fff !important;
+    border: 2px solid #0366d6;
+    background-color: #0365d641;
+    text-decoration: none;
+    outline: none;
+}
