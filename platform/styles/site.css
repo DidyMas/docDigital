@@ -498,17 +498,17 @@ div .select-selected::selection {
     color: #ffff;
 }
 
-::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
     background: rgb(27, 112, 182);
     border-radius: 10px;
 }
 
-::-webkit-scrollbar-track {
+ ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
 }
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
@@ -567,4 +567,83 @@ div .select-selected::selection {
     background-color: #0365d641;
     text-decoration: none;
     outline: none;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(252, 252, 252, 0) !important;
+    border-radius: .25rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.row1 {
+    margin-left: 2%;
+    margin-right: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgfluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 50px;
+}
+
+.SacdocF {
+    background: linear-gradient(to right, rgb(117, 184, 223), #96ace9, #96ace9, rgb(42, 172, 247));
+    border-radius: 0 7% / 0 36%;
+}
+
+.sactext {
+    font-family: 'AvenirBold';
+    color: #fff !important;
+    margin-top: 20px !important;
+}
+
+.sactexta {
+    font-family: 'AvenirRegular';
+    color: #fff !important;
+    margin-top: 20px !important;
+}
+
+.Sacca {}
+
+.typed-cursor {
+    opacity: 1;
+}
+
+.typed-cursor.typed-cursor--blink {
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink {
+    50% {
+        opacity: 0.0;
+    }
+}
+
+@-webkit-keyframes typedjsBlink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
