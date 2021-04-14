@@ -618,6 +618,16 @@ div .select-selected::selection {
     margin-top: 20px !important;
 }
 
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: 'AvenirRegular' im !important;
+    color: #8C8C8C !important;
+    text-align: justify !important;
+    hyphens: auto !important;
+    line-height: 25px !important;
+}
+
 .Sacca {}
 
 .typed-cursor {

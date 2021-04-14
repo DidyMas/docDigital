@@ -42,7 +42,7 @@ $pagina = obtenerPaginaActual();
         <a class="navbar-brand">
           <img class="navimg" href="index.php" src="platform/img/Sactiva_Final_Positivo.png" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -58,7 +58,7 @@ $pagina = obtenerPaginaActual();
               <a class="nav-link NSact"></a>
             </li>
           </ul>
-        </div>
+        </div>-->
         <a class="navbar-brand">
         <a class="nav-link TextS NavSact" href="platform/login.php?user=doctor">Iniciar Sesión</a> <!--href="login.php?user=<?php echo $tipo ?>"-->
         </a>
@@ -73,8 +73,10 @@ $pagina = obtenerPaginaActual();
 </video>
     <div class="col-md-12 p-lg-12 mx-auto my-5">
       <h1 class="display-4 fw-normal Hdoc">DocDigital</h1>
-      <p class="lead fw-normal ptext">Doctor Digital, es la aplicación web de video consulta médica que te permitirá</br> obtener una orientación médica de
+      <div class="col-sm-8 mr-auto ml-auto d-block d-sm-none" style="height: 20px"></div>
+      <p class="fw-normal ptext">Doctor Digital, es la aplicación web de video consulta médica que te permitirá</br> obtener una orientación médica de
          forma privada y segura. Así evitarás desplazamientos y esperas.</p>
+         <div class="col-sm-8 mr-auto ml-auto d-block d-sm-none" style="height: 20px"></div>
          <a class="BTns" href="platform/login.php?user=doctor">Iniciar Sesión</a> <!--href="login.php?user=<?php echo $tipo ?>"-->
     </div>
     <div class="product-device shadow-sm d-none d-md-block"></div>
@@ -89,11 +91,14 @@ $pagina = obtenerPaginaActual();
                   <span class="text-primary text-highlight-warning">
                     <span class="js-text-animation">futuro</span><span class="typed-cursor typed-cursor--blink">!</span>
                   </span>
+                  <div class="col-sm-8 mr-auto ml-auto d-block d-sm-none" style="height: 20px"></div>
                 </h1>
                 <p class="lead">Conoce a nuestro equipo médico y recibe la atención especializada que te mereces.</p>
+                <div class="col-sm-8 mr-auto ml-auto d-block d-sm-none" style="height: 20px"></div>
 
               <a class="btn btn-primary btn-wide transition-3d-hover" href="platform/login.php?user=doctor">Crear una cuenta</a>
               <a class="btn btn-link btn-wide" href="#">Lee más!<i class="fas fa-angle-right fa-sm ml-1"></i></a>
+              <div class="col-sm-8 mr-auto ml-auto d-block d-sm-none" style="height: 20px"></div>
         </div>
         <!-- End Content -->
         <!-- img Shape -->
@@ -113,14 +118,14 @@ $pagina = obtenerPaginaActual();
             
             <!-- Heading -->
             <h2 class="sactext">
-            Lorem ipsum dolor sit amet consectetur
+            DocDigital 
             </h2>
 
             <!-- Text -->
             <p class="sactexta">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit porttitor aptent, justo cursus netus purus blandit convallis massa ut ac, himenaeos imperdiet lectus enim class consequat risus nam.
+            Las vídeo-consultas realizadas por profesionales rompen la barrera virtual, el trato es personal y específico, hace que el profesional pueda obtener más información sintomática en comparación con un médico virtual automatizado con unas respuestas estándar.
             </p>
-
+            <div class="col-sm-8 mr-auto ml-auto d-block d-sm-none" style="height: 20px"></div>
           </div>
         </div> <!-- / .row -->
         <div class="form-row">
@@ -142,12 +147,13 @@ $pagina = obtenerPaginaActual();
                     
                     <!-- Heading -->
                     <h4 class="font-weight-bold">
-                    Lorem ipsum dolor
+                    DocDigital – Doctor
                     </h4>
+                    <div class="col-sm-8 mr-auto ml-auto d-block d-sm-none" style="height: 20px"></div>
 
                     <!-- Text -->
                     <p class="text-muted mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit porttitor aptent, justo cursus netus purus blandit convallis massa ut ac, himenaeos imperdiet lectus enim class consequat risus nam.
+                    Como doctor puedes ampliar tus ingresos, mediante la atención en línea de pacientes. 
                     </p>
                     
                   </div>
@@ -168,12 +174,12 @@ $pagina = obtenerPaginaActual();
                     
                     <!-- Heading -->
                     <h4 class="font-weight-bold">
-                    Lorem ipsum dolor
+                    DocDigital – paciente 
                     </h4>
 
                     <!-- Text -->
                     <p class="text-muted mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit porttitor aptent, justo cursus netus purus blandit convallis massa ut ac, himenaeos imperdiet lectus enim class consequat risus nam.
+                    Es el consultorio virtual donde podrás atender cualquier síntoma, resolver cualquier duda sin importar dónde estés y recibir una solución a tus padecimientos.
                     </p>
                     
                   </div>
@@ -212,13 +218,16 @@ $pagina = obtenerPaginaActual();
                   
                     <!-- Heading -->
                     <h4 class="font-weight-bold">
-                    Lorem ipsum dolor
+                    DocDigital
                     </h4>
+                    </br>
+                    </br>
 
                     <!-- Text -->
-                    <p class="text-muted mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit porttitor aptent, justo cursus netus purus blandit convallis massa ut ac, himenaeos imperdiet lectus enim class consequat risus nam.
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit porttitor aptent, justo cursus netus purus blandit convallis massa ut ac, himenaeos imperdiet lectus enim class consequat risus nam.
+                    <p class="lead mb-0">
+                    Servicio de interacción digital que te permite hablar con un doctor, disminuye ausencias de trabajo o faltas 
+                    a la escuela por consultas médicas o esperas largas en el hospital. Recibe tu diagnóstico y tratamiento, además
+                     de seguimiento en tiempo real, tú y tu familia estarán siempre protegidos.
                     </p>
 
                   </div>
@@ -236,26 +245,26 @@ $pagina = obtenerPaginaActual();
 
             <!-- Image -->
             <img src="Content/stethoscope.jpg" alt="..." class="img-fluid mb-6 mb-md-0" style="border-radius: 20px;">
-
+            <div class="col-sm-8 mr-auto ml-auto d-block d-sm-none" style="height: 20px"></div>
           </div>
           <div class="col-12 col-md-7 col-lg-6 order-md-1">
 
             <!-- Heading -->
             <h2>
             Manténgase enfocado en su salud. <br>
-              <span class="text-primary">Manejemos la atención</span>.
+              <span class="text-primary">Registrarse es gratis</span><span class="text-primary typed-cursor typed-cursor--blink">!</span>
             </h2>
-
+            <div class="col-sm-8 mr-auto ml-auto d-block d-sm-none" style="height: 20px"></div>
             <!-- Text -->
             <p class="font-size-lg text-gray-700 mb-6">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit porttitor aptent, justo cursus netus purus blandit convallis massa ut ac, himenaeos imperdiet lectus enim class consequat risus nam. 
+            Puedes contactar a nuestros expertos en salud, en el momento que lo necesites sin importar donde te encuentres.  
             </p>
-
+            <div class="col-sm-8 mr-auto ml-auto d-block d-sm-none" style="height: 20px"></div>
             <!-- Stats -->
             <div class="d-flex">
               <div class="pr-5">
                 <h3 class="mb-0">
-                  <span data-toggle="countup" data-from="0" data-to="100" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">100</span>%
+                  <span data-toggle="countup" data-from="0" data-to="100" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">100</span><span class="text-primary">%</span>
                 </h3>
                 <p class="text-gray-700 mb-0">
                 Satisfacción
@@ -264,7 +273,7 @@ $pagina = obtenerPaginaActual();
               <div class="border-left border-gray-300"></div>
               <div class="px-5">
                 <h3 class="mb-0">
-                  <span data-toggle="countup" data-from="0" data-to="24" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">24</span>/
+                  <span data-toggle="countup" data-from="0" data-to="24" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">24</span><span class="text-primary">/</span>
                   <span data-toggle="countup" data-from="0" data-to="7" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">7</span>
                 </h3>
                 <p class="text-gray-700 mb-0">
@@ -274,7 +283,7 @@ $pagina = obtenerPaginaActual();
               <div class="border-left border-gray-300"></div>
               <div class="pl-5">
                 <h3 class="mb-0">
-                  <span data-toggle="countup" data-from="0" data-to="100" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">100</span>k+
+                  <span data-toggle="countup" data-from="0" data-to="100" data-aos="" data-aos-id="countup:in" class="aos-init aos-animate counted">100</span><span class="text-primary">k+</span>
                 </h3>
                 <p class="text-gray-700 mb-0">
                   Atención
@@ -286,6 +295,12 @@ $pagina = obtenerPaginaActual();
         </div> <!-- / .row -->
       </div>
       <div class="col-md-12" style="height:50px;"></div>
+<div class="container-fluid">
+
+
+</div>
+
+<div class="col-md-12" style="height:50px;"></div>
 </main>
 
 </div>
