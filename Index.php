@@ -320,14 +320,14 @@ $rss = simplexml_load_file($url);
      <span class="timestamp">'.$date.'</span>
      </br>
      <p class="card-text newdes">'.$description.'</p>
-     <a href="'.$link.'" class="btnnoti btn-primary mx-auto d-block">Go!</a>
+     <a href="'.$link.'" target="_blank" class="btnnoti btn-primary mx-auto d-block">Go!</a>
      </br>
       </div>';
     }
      $i++;}
 	echo '<div style="clear: both;"></div>';}
 ?>	
-<?php feed("https://feeds.bbci.co.uk/mundo/rss.xml") ?>
+<?php feed("https://news.un.org/feed/subscribe/es/audio-product/all/audio-rss.xml") ?>
 </rss>
 
 </div>
