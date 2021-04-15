@@ -333,6 +333,7 @@ $rss = simplexml_load_file($url);
         </div> <!-- / .row -->
       </div>
       <div class="col-md-12" style="height:50px;"></div>
+      <a name="Contacto"></a>
       <div class="Notext">Contacto</div>
       <div class="col-md-12" style="height:50px;"></div>
 <div class="container">
@@ -395,7 +396,7 @@ $rss = simplexml_load_file($url);
                 </div>
                 <div class="row FSINP">
                     <div class="col-sm-12">
-							        <a class="EditFen" href="#Inicio">Inicio &nbsp;</a> | <a class="EditFen" href="#Plataformas">&nbsp;Plataformas&nbsp;</a> | <a class="EditFen" href="#Noticias">&nbsp;Noticias&nbsp;</a> | <a class="EditFen" href="/Home/Index#sectionContacto">&nbsp;Contacto</a> | <a class="EditFen" href="https://sactiva.com/#gsc.tab=0" target="_blank">&nbsp;Sactiva</a> 
+							        <a class="EditFen" href="#Inicio">Inicio &nbsp;</a> | <a class="EditFen" href="#Plataformas">&nbsp;Plataformas&nbsp;</a> | <a class="EditFen" href="#Noticias">&nbsp;Noticias&nbsp;</a> | <a class="EditFen" href="#Contacto">&nbsp;Contacto</a> | <a class="EditFen" href="https://sactiva.com/#gsc.tab=0" target="_blank">&nbsp;Sactiva</a> 
                     </div>
                 </div>
             </div>
