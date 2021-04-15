@@ -35,6 +35,7 @@ $pagina = obtenerPaginaActual();
 
 <body class="animate animationfadeIn">
   <header>
+  <a name="Inicio"></a>
     <nav
       class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 wrapper"
       id="second">
@@ -115,7 +116,7 @@ $pagina = obtenerPaginaActual();
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-7 text-center">
-            
+          <a name="Plataformas"></a>
             <!-- Heading -->
             <h2 class="sactext">
             DocDigital 
@@ -189,7 +190,6 @@ $pagina = obtenerPaginaActual();
                   
                   <!-- Image -->
                   <img src="platform/img/SactivaDocdig1.jpg" class="mx-auto d-block img-fluid left-0" alt="...">
-
                 </div>
               </div> <!-- / .row -->
             </div>
@@ -237,6 +237,44 @@ $pagina = obtenerPaginaActual();
             </div>
           </div>
         </div> <!-- / .row -->
+        <div class="col-md-12" style="height:50px;"></div> 
+      <a name="Noticias"></a>
+      <div class="Notext">Noticias</div>
+<div class="container rrSS">
+ 
+<?php
+function feed($feedURL){
+$i = 0; 
+$url = $feedURL; 
+$rss = simplexml_load_file($url); 
+    foreach($rss->channel->item as $item) { 
+    $link = $item->link;  
+    $title = $item->title;  
+    $date = $item->pubDate;  
+	$guid = $item->guid;  
+    $description = strip_tags($item->description);  
+    if (strlen($description) > 800) { 
+    $stringCut = substr($description, 0, 200);                   
+    $description = substr($stringCut, 0, strrpos($stringCut, ' ')).'...';}
+    if ($i < 16) { 
+     echo 
+     '<div class="listitem" role="option">
+     <img src="platform/img/sacomsnews.png" class="Imgnews" alt="">
+     <h5 class="card-title">'.$title.'</h5>
+     <span class="timestamp">'.$date.'</span>
+     </br>
+     <p class="card-text newdes">'.$description.'</p>
+     <a href="'.$link.'" target="_blank" class="btnnoti btn-primary mx-auto d-block">Go!</a>
+     </br>
+      </div>';
+    }
+     $i++;}
+	echo '<div style="clear: both;"></div>';}
+?>	
+<?php feed("https://news.un.org/feed/subscribe/es/audio-product/all/audio-rss.xml") ?>
+</rss>
+
+</div>
         <div class="col-md-12" style="height:50px;"></div>
 <section class="pt-12">
     <div class="container-fluid">
@@ -294,53 +332,89 @@ $pagina = obtenerPaginaActual();
           </div>
         </div> <!-- / .row -->
       </div>
-      <div class="col-md-12" style="height:50px;"></div> 
-      <div class="Notext">Noticias</div>
-<div class="container rrSS">
- 
-<?php
-function feed($feedURL){
-$i = 0; 
-$url = $feedURL; 
-$rss = simplexml_load_file($url); 
-    foreach($rss->channel->item as $item) { 
-    $link = $item->link;  
-    $title = $item->title;  
-    $date = $item->pubDate;  
-	$guid = $item->guid;  
-    $description = strip_tags($item->description);  
-    if (strlen($description) > 800) { 
-    $stringCut = substr($description, 0, 200);                   
-    $description = substr($stringCut, 0, strrpos($stringCut, ' ')).'...';}
-    if ($i < 16) { 
-     echo 
-     '<div class="listitem" role="option">
-     <img src="platform/img/sacomsnews.png" class="Imgnews" alt="">
-     <h5 class="card-title">'.$title.'</h5>
-     <span class="timestamp">'.$date.'</span>
-     </br>
-     <p class="card-text newdes">'.$description.'</p>
-     <a href="'.$link.'" target="_blank" class="btnnoti btn-primary mx-auto d-block">Go!</a>
-     </br>
-      </div>';
-    }
-     $i++;}
-	echo '<div style="clear: both;"></div>';}
-?>	
-<?php feed("https://news.un.org/feed/subscribe/es/audio-product/all/audio-rss.xml") ?>
-</rss>
-
-</div>
-
-<div class="col-md-12" style="height:50px;"></div>
-</main>
-
-</div>
-
-  <footer class="border-top footer text-muted">
-    <div class="container text-center Ftext">
-      &copy; <a class="Ftext">Copyright 2021 Sactiva-DocDigital </a>
+      <div class="col-md-12" style="height:50px;"></div>
+      <div class="Notext">Contacto</div>
+      <div class="col-md-12" style="height:50px;"></div>
+<div class="container">
+      <div class="row">
+        <div class="col-md-6">
+            <div class="fieldc">
+                <input type="text" required="" autocomplete="off" id="nombre">
+                <label for="nombre" title="Nombre" data-title="Nombre"></label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="fieldc">
+                <input type="text" required="" autocomplete="off" id="correo">
+                <label for="correo" title="Correo eletrónico" data-title="Correo electrónico"></label>
+            </div>
+        </div>
     </div>
+    <div class="col-lg-12 d-none d-md-none d-lg-block" style="height: 50px"></div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="fieldc">
+                <input type="text" required="" autocomplete="off" id="empresa">
+                <label for="empresa" title="Empresa" data-title="Empresa"></label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="fieldc">
+                <input type="text" required="" autocomplete="off" id="telefono" maxlength="12" onkeyup="Cleantext(this)" onchange="Cleantext(this)">
+                <label for="telefono" title="Teléfono de contacto" data-title="Teléfono de contacto"></label>
+            </div>
+            <script>
+                function Cleantext(obj) {
+                    obj.value = obj.value.replace(/\D/g, '');
+                }
+            </script>
+        </div>
+    </div>
+    <div class="col-lg-12 d-none d-md-none d-lg-block" style="height: 50px"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="fieldc">
+                <input type="text" required="" autocomplete="off" id="mensaje">
+                <label for="mensaje" title="Mensaje" data-title="Mensaje"></label>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="height: 30px">	</div>
+    <a href="#" target="_blank" class="btnnoti btn-primary mx-auto d-block">Envia!</a>
+    </div>
+<div class="col-md-12" style="height:100px;"></div>
+</main>
+</div>
+  <footer class="border-top footer text-muted">
+  <div class="row">
+            <div class="col-5 col-sm-5 float-left p-1">
+                <div class="row FSINP">
+                    <div class="col-sm-12">
+                        <span class="EditFb">Telefono oficina:</span> <span class="EditF">(55) 15438978</span>
+                    </div>
+                </div>
+                <div class="row FSINP">
+                    <div class="col-sm-12">
+							        <a class="EditFen" href="#Inicio">Inicio &nbsp;</a> | <a class="EditFen" href="#Plataformas">&nbsp;Plataformas&nbsp;</a> | <a class="EditFen" href="#Noticias">&nbsp;Noticias&nbsp;</a> | <a class="EditFen" href="/Home/Index#sectionContacto">&nbsp;Contacto</a> | <a class="EditFen" href="https://sactiva.com/#gsc.tab=0" target="_blank">&nbsp;Sactiva</a> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 col-sm-2 text-center">
+            <img style="width: 130px;height: auto; padding-top: 20px;" src="platform/img/SactivaDocdigf.png" alt="Sactibva doc digital">
+            </div>
+            <div class="col-5 col-lg-5 p-1">
+                <div class="row FSINP">
+                    <div class="col-sm-12">
+						<a class="EditlFb float-right" href="https://sactiva.com/Aviso%20de%20Privacidad.html#gsc.tab=0" target="_blank" >&nbsp;Aviso de privacidad</a><span class="EditlFb float-right"> Doc Digital 2021 / </span>
+                    </div>
+                </div>
+                <div class="row FSINP">
+                    <div class="col-sm-12">
+                        <span class=" EditF float-right"><a>Doc digital es una plataforma propiedad de Sactiva</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
   </footer>
 
 </body>
