@@ -294,9 +294,41 @@ $pagina = obtenerPaginaActual();
           </div>
         </div> <!-- / .row -->
       </div>
-      <div class="col-md-12" style="height:50px;"></div>
-<div class="container-fluid">
-
+      <div class="col-md-12" style="height:50px;"></div> 
+      <div class="Notext">Noticias</div>
+<div class="container rrSS">
+ 
+<?php
+function feed($feedURL){
+$i = 0; 
+$url = $feedURL; 
+$rss = simplexml_load_file($url); 
+    foreach($rss->channel->item as $item) { 
+    $link = $item->link;  
+    $title = $item->title;  
+    $date = $item->pubDate;  
+	$guid = $item->guid;  
+    $description = strip_tags($item->description);  
+    if (strlen($description) > 800) { 
+    $stringCut = substr($description, 0, 200);                   
+    $description = substr($stringCut, 0, strrpos($stringCut, ' ')).'...';}
+    if ($i < 16) { 
+     echo 
+     '<div class="listitem" role="option">
+     <img src="platform/img/sacomsnews.png" class="Imgnews" alt="">
+     <h5 class="card-title">'.$title.'</h5>
+     <span class="timestamp">'.$date.'</span>
+     </br>
+     <p class="card-text newdes">'.$description.'</p>
+     <a href="'.$link.'" class="btnnoti btn-primary mx-auto d-block">Go!</a>
+     </br>
+      </div>';
+    }
+     $i++;}
+	echo '<div style="clear: both;"></div>';}
+?>	
+<?php feed("https://news.un.org/feed/subscribe/es/audio-product/all/audio-rss.xml") ?>
+</rss>
 
 </div>
 

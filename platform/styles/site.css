@@ -657,3 +657,58 @@ div .select-selected::selection {
         opacity: 1;
     }
 }
+
+.rrSS {
+    height: 250px;
+    overflow: auto;
+    border: 2px solid #0366d6;
+    border-radius: 10px;
+    padding: 25px;
+    background: #fff;
+}
+
+.btnnoti {
+    max-width: 70px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.Imgnews {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    float: left;
+}
+
+.timestamp {
+    margin-bottom: 20px;
+    color: #0366d6;
+}
+
+.newdes {
+    margin: 10px;
+}
+
+.listitem {
+    border-bottom: solid 2px #8c8c8c;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    background: #ffffff59;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.Notext {
+    text-align: center;
+    font-family: 'AvenirBold';
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #0366d6;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-top: 20px;
+}
