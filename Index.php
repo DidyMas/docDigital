@@ -327,7 +327,7 @@ $rss = simplexml_load_file($url);
      $i++;}
 	echo '<div style="clear: both;"></div>';}
 ?>	
-<?php feed("https://news.un.org/feed/subscribe/es/audio-product/all/audio-rss.xml") ?>
+<?php feed("https://feeds.bbci.co.uk/mundo/rss.xml") ?>
 </rss>
 
 </div>
