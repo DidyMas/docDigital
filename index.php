@@ -358,7 +358,8 @@ $pagina = obtenerPaginaActual();
                   if ($i < 16) { 
                   echo 
                   '<div class="listitem" role="option">
-                  <img src="platform/assets/img/sacomsnews.png" class="Imgnews" alt="">
+                  <img src="platform/assets/img/sacomsnews.png" class="Imgnews d-none d-sm-none d-md-block" alt="">
+                  <div class="d-block d-sm-block d-md-none"> <img src="platform/assets/img/sacomsnews.png" class="Imgnewsm mx-auto d-block" alt=""></div>
                   <h5 class="card-title">'.$title.'</h5>
                   <span class="timestamp">'.$date.'</span>
                   </br>
@@ -395,7 +396,7 @@ $pagina = obtenerPaginaActual();
           <div class="p-3 pt-0">
             <h4 class="text-gradient text-danger mb-0"> Manténgase enfocado en su salud.</h4>
             <h4 class="mb-4">La salud es un derecho humano.</h4>
-            <p>Si queremos que la salud para todos sea una realidad, necesitamos: personas y comunidades que tengan
+            <p class="textajust">Si queremos que la salud para todos sea una realidad, necesitamos: personas y comunidades que tengan
               acceso a servicios de salud de alta calidad para que puedan cuidar de su propia salud y de la salud de sus
               familiares; profesionales sanitarios cualificados que proporcionen una atención de calidad centrada en las
               personas; y responsables de la formulación de políticas comprometidos a invertir en la atención primaria
